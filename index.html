@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+  <title>Emergency Cleanings | Simple Cleanup Estimate</title>
+
+
+
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+
+
+<body>
+
+  <main class="page">
+
+    <section class="hero">
+
+      <span class="hero-badge">Easy Estimate Request</span>
+
+      <h1>Cleanup Help Made Simple</h1>
+
+      <p>
+
+        Answer a few simple questions. We will review your request and contact you with the next step.
+
+        No judgment. No pressure.
+
+      </p>
+
+    </section>
+
+
+
+    <section class="estimate-box">
+
+      <div class="estimate-label">Estimated Starting Range</div>
+
+      <span class="estimate-price" id="estimateRange">$0 â $0</span>
+
+
+
+      <div class="estimate-details">
+
+        <div class="mini-card">
+
+          <span>Suggested Deposit</span>
+
+          <strong id="depositAmount">$0</strong>
+
+        </div>
+
+
+
+        <div class="mini-card">
+
+          <span>Cleanup Size</span>
+
+          <strong id="projectType">Pending</strong>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="disclaimer">
+
+        <strong>Important:</strong> This is only an estimate calculator. Final pricing requires reviewing the property,
+
+        photos or video, access conditions, disposal needs, and the full cleanup scope.
+
+      </div>
+
+    </section>
+
+
+
+    <section class="wizard">
+
+      <div class="progress">
+
+        <div class="progress-top">
+
+          <span id="stepLabel">Step 1 of 6</span>
+
+          <span id="stepHint">Contact information</span>
+
+        </div>
+
+
+
+        <div class="progress-track">
+
+          <div class="progress-fill" id="progressFill"></div>
+
+        </div>
+
+      </div>
+
+
+
+      <form id="estimateForm" novalidate>
+
+        <div class="slides" id="slides">
+
+
+
+          <section class="slide">
+
+            <div class="step-number">1</div>
+
+            <h2>Your Contact InformatioÚB[\ÈÚÈÙHÚÝ[ÛÛXÝXÝ]\ÈÛX[\ÜBB]Û\ÜÏHÛËXÛÛB]Û\ÜÏHY[BX[ÜH\Ý[YH\Ý[YHÜ[Û\ÜÏH\]Z\YÜÜ[ÛX[B[]YH\Ý[YH\OH^\]Z\Y]]ØÛÛ\]OHÚ][[[YHXÙZÛ\H\Ý[YHBÙ]BB]Û\ÜÏHY[BX[ÜH\Ý[YH\Ý[YHÜ[Û\ÜÏH\]Z\YÜÜ[ÛX[B[]YH\Ý[YH\OH^\]Z\Y]]ØÛÛ\]OH[Z[K[[YHXÙZÛ\H\Ý[YHBÙ]BÙ]BB]Û\ÜÏHÛËXÛÛB]Û\ÜÏHY[BX[ÜHÛHÛH[X\Ü[Û\ÜÏH\]Z\YÜÜ[ÛX[B[]YHÛH\OH[\]Z\Y]]ØÛÛ\]OH[XÙZÛ\H
+MMJHLËM
+MÈBÙ]BB]Û\ÜÏHY[BX[ÜH[XZ[[XZ[Y\ÜÈÜ[Û\ÜÏH\]Z\YÜÜ[ÛX[B[]YH[XZ[\OH[XZ[\]Z\Y]]ØÛÛ\]OH[XZ[XÙZÛ\H[YP^[\KÛÛHBÙ]BÙ]BB]Û\ÜÏHY[BX[ÜHY\ÜÈÙ\XÙHØØ][ÛÛX[B[]YHY\ÜÈ\OH^]]ØÛÛ\]OHÝY]XY\ÜÈXÙZÛ\HÚ]KÝ]KÜ[Y\ÜÈBÙ]BB]Û\ÜÏH]X]ÛÈB]ÛÛ\ÜÏH\[X\HY[\OH]ÛÛÛXÚÏHÛÛ[YQÛPÛÛXÝ
+
+HBÛÛ[YCBØ]ÛBÙ]BÜÙXÝ[ÛBBÙXÝ[ÛÛ\ÜÏHÛYHB]Û\ÜÏHÝ\[[X\Ù]BÚ]\HÙXÙHYYÈ[ÏÚBÚÛÜÙHHÛÜÙ\ÝÜ[ÛÜBB]Û\ÜÏHÚÚXÙK[\ÝBX[Û\ÜÏHÚÚXÙHB[]\OHY[È[YOHÜ\U\H[YOHLBÝÛÏ\\Y[ÜÛÛÏÜÝÛÏBÜ[HÛX[\][ÈÜXÙHÜ[]ÜÜ[BÛX[BBX[Û\ÜÏHÚÚXÙHB[]\OHY[È[YOHÜ\U\H[YOHÍLBÝÛÏÛX[Ý\ÙOÜÝÛÏBÜ[HÛX[\ÛYHÚ]H]ÈÛÛ\ËÜÜ[BÛX[BBX[Û\ÜÏHÚÚXÙHB[]\OHY[È[YOHÜ\U\H[YOHLLBÝÛÏYY][HÝ\ÙOÜÝÛÏBÜ[H\XØ[[Z[HÛYKÜÜ[BÛX[BBX[Û\ÜÏHÚÚXÙHB[]\OHY[È[YOHÜ\U\H[YOHMBÝÛÏ\ÙHÛYHÜ][\H\X\ÏÜÝÛÏBÜ[H\Ù\Ü\KØ\YÙK\Ù[Y[ÜÙ]\[\X\ËÜÜ[BÛX[BÙ]BB]Û\ÜÏH]X]ÛÈB]ÛÛ\ÜÏH\ÙXÛÛ\H\OH]ÛÛÛXÚÏHÛÕÔÝ\
+Ý\[Ý\HJHXÚÏØ]ÛB]ÛÛ\ÜÏH\[X\H\OH]ÛÛÛXÚÏHÛÕÔÝ\
+Ý\[Ý\
+ÈJH^Ø]ÛBÙ]BÜÙXÝ[ÛBBÙXÝ[ÛÛ\ÜÏHÛYHB]Û\ÜÏHÝ\[[X\ÏÙ]BÝÈ]XÚÛX[\\ÈYYYÏÚBÈYYÈH^XÝXÚÈHÛÜÙ\Ý\ØÜ\[ÛÜBB]Û\ÜÏHÚÚXÙK[\ÝBX[Û\ÜÏHÚÚXÙHB[]\OHY[È[YOHÛ]\][[YOHÍLBÝÛÏYÚÛX[\ÜÝÛÏBÜ[ÛÛYHÛ]\\ÚÜ][\ÈÈ[[ÝKÜÜ[BÛX[BBX[Û\ÜÏHÚÚXÙHB[]\OHY[È[YOHÛ]\][[YOHBÝÛÏ[Ù\]HÛX[\ÜÝÛÏBÜ[Ù]\[\X\ÈYYÛX[[ÈÜ[[Ý[ÜÜ[BÛX[BBX[Û\ÜÏHÚÚXÙHB[]\OHY[È[YOHÛ]\][[YOHMÌBÝÛÏX]HÛX[\ÜÝÛÏBÜ[X[H][\Ë\ÚÜÛ]\ÝYÚÝ]HÛYKÜÜ[BÛX[BBX[Û\ÜÏHÚÚXÙHB[]\OHY[È[YOHÛ]\][[YOHÌBÝÛÏ\HY¦icult Cleanup</strong>
+
+                <span>Large amount of items, strong odor, or difficult conditions.</span>
+
+              </label>
+
+            </div>
+
+
+
+            <div class="nav-buttons">
+
+              <button class="btn btn-secondary" type="button" onclick="goToStep(currentStep - 1)">Back</button>
+
+              <button class="btn btn-primary" type="button" onclick="goToStep(currentStep + 1)">Next</button>
+
+            </div>
+
+          </section>
+
+
+
+          <section class="slide">
+
+            <div class="step-number">4</div>
+
+            <h2>How Many Areas Are Affected?</h2>
+
+            <p>Choose the option that feels closest.</p>
+
+
+
+            <div class="choice-list">
+
+              <label class="choice">
+
+                <input type="radio" name="areasAffected" value="250">
+
+                <strong>One Room or Small Area</strong>
+
+                <span>Only one space needs help.</span>
+
+              </label>
+
+
+
+              <label class="choice">
+
+                <input type="radio" name="areasAffected" value="550">
+
+                <strong>A Few Rooms</strong>
+
+                <span>Two or three areas need attention.</span>
+
+              </label>
+
+
+
+              <label class="choice">
+
+                <input type="radio" name="areasAffected" value="1000">
+
+                <strong>Most of the Home</strong>
+
+                <span>Several rooms or main living spaces.</span>
+
+              </label>
+
+
+
+              <label class="choice">
+
+                <input type="radio" name="areasAffected" value="1800">
+
+                <strong>Whole Property</strong>
+
+                <span>The entire home or multiple areas need cleanup.</span>
+
+              </label>
+
+            </div>
+
+
+
+            <div class="nav-buttons">
+
+              <button class="btn btn-secondary" type="button" onclick="goToStep(currentStep - 1)">Back</button>
+
+              <button class="btn btn-primary" type="button" onclick="goToStep(currentStep + 1)">Next</button>
+
+            </div>
+
+          </section>
+
+
+
+          <section class="slide">
+
+            <div class="step-number">5</div>
+
+            <h2>Any Special Conditions?</h2>
+
+            <p>This helps us prepare safely and respectfully.</p>
+
+
+
+            <div class="choice-list">
+
+              <label class="choice">
+
+                <input type="radio" name="condition" value="0">
+
+                <strong>No Special Concerns</strong>
+
+                <span>No major odor, pests, or unsafe conditions that you know of.</span>
+
+              </label>
+
+
+
+              <label class="choice">
+
+                <input type="radio" name="condition" value="400">
+
+                <strong>Odor or Spoiled Food</strong>
+
+                <span>There may be odor, old food, or trash.</span>
+
+              </label>
+
+
+
+              <label class="choice">
+
+                <input type="radio" name="condition" value="800">
+
+                <strong>Pests or Animal Waste</strong>
+
+                <span>There may be pests, pet waste, or animal-related cleanup.</span>
+
+              </label>
+
+
+
+              <label class="choice">
+
+                <input type="radio" name="condition" value="1400">
+
+                <strong>Not Sure / Difficult Conditions</strong>
+
+                <span>You are unsure, or the cleanup may need special care.</span>
+
+              </label>
+
+            </div>
+
+
+
+            <div class="nav-buttons">
+
+              <button class="btn btn-secondary" type="button" onclick="goToStep(currentStep - 1)">Back</button>
+
+              <button class="btn btn-primary" type="button" onclick="goToStep(currentStep + 1)">Next</button>
+
+            </div>
+
+          </section>
+
+
+
+          <section class="slide">
+
+            <div class="step-number">6</div>
+
+            <h2>Almost Done</h2>
+
+            <p>Add anything else you want us to know, then send your request.</p>
+
+
+
+            <div class="field">
+
+              <label for="urgency">When Do You Need Help?</label>
+
+              <select id="urgency">
+
+                <option value="1.00">I am flexible</option>
+
+                <option value="1.05" selected>Within 1â2 weeks</option>
+
+                <option value="1.10">This week</option>
+
+                <option value="1.18">As soon as possible</option>
+
+              </select>
+
+            </div>
+
+
+
+            <div class="field">
+
+              <label for="notes">Notes</label>
+
+              <textarea id="notes" placeholder="Example: garage included, photos available, need help quickly, family member needs assistance, etc."></textarea>
+
+            </div>
+
+
+
+            <div class="nav-buttons">
+
+              <button class="btn btn-secondary" type="button" onclick="goToStep(currentStep - 1)">Back</button>
+
+
+
+              <button class="btn btn-primary" id="sendBtn" type="button" onclick="sendEstimateRequest()">
+
+                Send My Request
+
+              </button>
+
+
+
+              <button class="btn btn-secondary btn-full" type="button" onclick="resetForm()">
+
+                Clear Form
+
+              </button>
+
+            </div>
+
+
+
+            <div id="sendStatus"></div>
+
+          </section>
+
+
+
+        </div>
+
+      </form>
+
+    </section>
+
+
+
+    <div class="footer">
+
+      <strong>Emergency Cleanings</strong><br>
+
+      This estimate is not a final quote. Final pricing requires property review.
+
+    </div>
+
+
+
+    <div class="confirm-overlay" id="confirmOverlay">
+
+      <div class="confirm-box">
+
+        <div class="confirm-icon">?</div>
+
+
+
+        <h2>Would you like us to contact you?</h2>
+
+
+
+        <p>
+
+          Your estimate is only a starting range. A Project Manager can review your information
+
+          and help confirm the next step.
+
+        </p>
+
+
+
+        <div class="confirm-price">
+
+          <span>Your Estimated Range</span>
+
+          <strong id="confirmEstimateRange">$0 â $0</strong>
+
+        </div>
+
+
+
+        <p>
+
+          Does this estimated range look okay for now?
+
+        </p>
+
+
+
+        <div class="confirm-actions">
+
+          <button class="btn confirm-no" type="button" onclick="declineContact()">
+
+            No, Not Right Now
+
+          </button>
+
+
+
+          <button class="btn confirm-yes" type="button" onclick="confirmContactAndSend()">
+
+            Yes, Contact Me
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
