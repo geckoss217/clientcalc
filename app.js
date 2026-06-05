@@ -13,7 +13,7 @@ const CONFIG = {
 
     Leave empty to use mailto fallback.
   */
-  formEndpoint: ''
+  formEndpoint: 'https://script.google.com/macros/s/AKfycbyIuj_hhPBuTY7sNBhGzrdkqBJW2eKwqZQucZjnSyqT2W8DFKkPMzCsY4fiuWORrWj17g/exec'
 };
 
 let currentStep = 0;
@@ -372,19 +372,16 @@ async function sendEstimateToSupport() {
 }
 
 async function sendToEndpoint(payload) {
-  const response = await fetch(CONFIG.formEndpoint, {
+  // Google Apps Script requires no-cors mode to avoid CORS preflight failures.
+  // The response is opaque (unreadable) but the data still reaches the sheet.
+  await fetch(CONFIG.formEndpoint, {
     method: 'POST',
+    mode: 'no-cors',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'text/plain'
     },
     body: JSON.stringify(payload)
   });
-
-  if (!response.ok) {
-    throw new Error(`Form endpoint failed with status ${response.status}`);
-  }
-
-  return response;
 }
 
 function openMailClient(payload) {
